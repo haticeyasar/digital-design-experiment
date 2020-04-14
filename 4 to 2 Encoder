@@ -1,0 +1,29 @@
+---Hazırlayan:Hatice Yaşar
+--4 bit giristen aktif olan girisibelirleyen kodlama devresi
+
+
+ Library IEEE;
+ Use IEEE.std_logic_1164.all;
+ 
+ 
+ Entity eKodlayici4_2 is
+--4 giris 2 cikisli port
+  Port(a : IN std_logic_vector(3 downto 0);
+       b : OUT std_logic_vector(1 downto 0));
+End eKodlayici4_2;
+ 
+  Architecture Behv of eKodlayici4_2 is
+       Begin
+         B<="00" when A="0001" else
+             "01" when A="0010" else
+             "10" when A="0100" else
+             "11" when A="1000" else
+             "ZZ";--hicbir zaman aktif degilse
+                --veya birden fazla aktif olan varsa
+      
+ End Behv;
+
+          
+          
+
+
