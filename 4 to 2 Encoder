@@ -1,9 +1,9 @@
 ---Hazırlayan:Hatice Yaşar
---4 bit giristen aktif olan girisibelirleyen kodlama devresi
+--4 bit giristen aktif olan girisi belirleyen kodlama devresi
 
 
- Library IEEE;
- Use IEEE.std_logic_1164.all;
+    Library IEEE;
+    Use IEEE.std_logic_1164.all;
  
  
  Entity eKodlayici4_2 is
@@ -23,6 +23,7 @@ End eKodlayici4_2;
       
  End Behv;
 
+   
           
           
 
